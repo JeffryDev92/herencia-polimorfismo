@@ -1,18 +1,37 @@
-## Getting Started
+# project-java-herencia
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este proyecto demuestra el uso de herencia y polimorfismo en Java mediante una jerarquía de clases relacionadas con vehículos.
 
-## Folder Structure
+Jerarquía de clases:
 
-The workspace contains two folders by default, where:
+Vehiculo (abstracta)
+ ├── Automovil
+ └── Camion
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Vehiculo: clase base abstracta con atributos comunes (marca, modelo, año) y método abstracto mostrarInfo().
+- Automovil: hereda de Vehiculo, añade numPuertas y sobrescribe mostrarInfo().
+- Camion: hereda de Vehiculo, añade capacidadCarga y sobrescribe mostrarInfo().
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Demostración en consola:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Se utiliza polimorfismo al declarar objetos de tipo Vehiculo, instanciados como Automovil y Camion.
 
-## Dependency Management
+Ejemplo de salida:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Demostración de polimorfismo:
+--------------------------------
+Automóvil:
+Marca: Toyota
+Modelo: Corolla
+Año: 2020
+Número de puertas: 4
+--------------------------------
+Camión:
+Marca: Volvo
+Modelo: FH16
+Año: 2019
+Capacidad de carga: 18.0 toneladas
+
+Captura de pantalla:
+
+![Captura de ejecución](captura_consola.jpg)
